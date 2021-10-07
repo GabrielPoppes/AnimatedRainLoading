@@ -32,7 +32,7 @@ namespace AnimatedRainLoading
             this.components = new System.ComponentModel.Container();
             this.panelGotaChuva = new System.Windows.Forms.Panel();
             this.picRain1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPoçaDaAgua = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picRain2 = new System.Windows.Forms.PictureBox();
             this.picRain3 = new System.Windows.Forms.PictureBox();
@@ -44,9 +44,11 @@ namespace AnimatedRainLoading
             this.picRain9 = new System.Windows.Forms.PictureBox();
             this.picRain10 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelPoçaDaAgua = new System.Windows.Forms.Panel();
+            this.timerPocaDaAgua = new System.Windows.Forms.Timer(this.components);
             this.panelGotaChuva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRain1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoçaDaAgua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRain2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRain3)).BeginInit();
@@ -86,15 +88,15 @@ namespace AnimatedRainLoading
             this.picRain1.TabIndex = 0;
             this.picRain1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxPoçaDaAgua
             // 
-            this.pictureBox2.Image = global::AnimatedRainLoading.Properties.Resources.puddle;
-            this.pictureBox2.Location = new System.Drawing.Point(44, 430);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(249, 59);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxPoçaDaAgua.Image = global::AnimatedRainLoading.Properties.Resources.puddle;
+            this.pictureBoxPoçaDaAgua.Location = new System.Drawing.Point(44, 430);
+            this.pictureBoxPoçaDaAgua.Name = "pictureBoxPoçaDaAgua";
+            this.pictureBoxPoçaDaAgua.Size = new System.Drawing.Size(249, 59);
+            this.pictureBoxPoçaDaAgua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPoçaDaAgua.TabIndex = 1;
+            this.pictureBoxPoçaDaAgua.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -201,14 +203,27 @@ namespace AnimatedRainLoading
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panelPoçaDaAgua
+            // 
+            this.panelPoçaDaAgua.Location = new System.Drawing.Point(44, 430);
+            this.panelPoçaDaAgua.Name = "panelPoçaDaAgua";
+            this.panelPoçaDaAgua.Size = new System.Drawing.Size(249, 59);
+            this.panelPoçaDaAgua.TabIndex = 3;
+            // 
+            // timerPocaDaAgua
+            // 
+            this.timerPocaDaAgua.Interval = 1000;
+            this.timerPocaDaAgua.Tick += new System.EventHandler(this.timerPocaDaAgua_Tick);
+            // 
             // Loading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(358, 642);
+            this.Controls.Add(this.panelPoçaDaAgua);
             this.Controls.Add(this.panelGotaChuva);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBoxPoçaDaAgua);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Loading";
@@ -217,7 +232,7 @@ namespace AnimatedRainLoading
             this.Load += new System.EventHandler(this.Loading_Load);
             this.panelGotaChuva.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picRain1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoçaDaAgua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRain2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRain3)).EndInit();
@@ -235,7 +250,7 @@ namespace AnimatedRainLoading
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxPoçaDaAgua;
         private System.Windows.Forms.Panel panelGotaChuva;
         private System.Windows.Forms.PictureBox picRain1;
         private System.Windows.Forms.PictureBox picRain6;
@@ -248,6 +263,8 @@ namespace AnimatedRainLoading
         private System.Windows.Forms.PictureBox picRain8;
         private System.Windows.Forms.PictureBox picRain7;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panelPoçaDaAgua;
+        private System.Windows.Forms.Timer timerPocaDaAgua;
     }
 }
 

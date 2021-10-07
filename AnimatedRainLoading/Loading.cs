@@ -26,6 +26,7 @@ namespace AnimatedRainLoading
         #endregion
 
         int[] rainSpeeds = {4, 6, 8, 3, 5, 6, 7, 4, 2, 5 }; // velocidade de cada gota de chuva
+        int loadingSpeed = 2;
         public Loading()
         {
             InitializeComponent();
@@ -124,6 +125,16 @@ namespace AnimatedRainLoading
         private void Loading_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            timerPocaDaAgua.Start();
+        }
+
+        private void timerPocaDaAgua_Tick(object sender, EventArgs e)
+        {
+            panelPoçaDaAgua.Location = new Point(panelPoçaDaAgua.Location.X, panelPoçaDaAgua.Location.Y + loadingSpeed);
+            if (panelPoçaDaAgua.Location.Y > pictureBoxPoçaDaAgua.Location.Y + pictureBoxPoçaDaAgua.Height)
+            {
+                this.timerPocaDaAgua.Stop();
+            }
         }
     }
 }
