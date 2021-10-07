@@ -29,65 +29,67 @@ namespace AnimatedRainLoading
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
+            this.panelGotaChuva = new System.Windows.Forms.Panel();
+            this.picRain1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.picRain2 = new System.Windows.Forms.PictureBox();
+            this.picRain3 = new System.Windows.Forms.PictureBox();
+            this.picRain4 = new System.Windows.Forms.PictureBox();
+            this.picRain5 = new System.Windows.Forms.PictureBox();
+            this.picRain6 = new System.Windows.Forms.PictureBox();
+            this.picRain7 = new System.Windows.Forms.PictureBox();
+            this.picRain8 = new System.Windows.Forms.PictureBox();
+            this.picRain9 = new System.Windows.Forms.PictureBox();
+            this.picRain10 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panelGotaChuva.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain10)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelGotaChuva
             // 
-            this.panel1.Controls.Add(this.pictureBox12);
-            this.panel1.Controls.Add(this.pictureBox11);
-            this.panel1.Controls.Add(this.pictureBox10);
-            this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox8);
-            this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(40, 217);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 184);
-            this.panel1.TabIndex = 2;
+            this.panelGotaChuva.Controls.Add(this.picRain10);
+            this.panelGotaChuva.Controls.Add(this.picRain9);
+            this.panelGotaChuva.Controls.Add(this.picRain8);
+            this.panelGotaChuva.Controls.Add(this.picRain7);
+            this.panelGotaChuva.Controls.Add(this.picRain6);
+            this.panelGotaChuva.Controls.Add(this.picRain5);
+            this.panelGotaChuva.Controls.Add(this.picRain4);
+            this.panelGotaChuva.Controls.Add(this.picRain3);
+            this.panelGotaChuva.Controls.Add(this.picRain2);
+            this.panelGotaChuva.Controls.Add(this.picRain1);
+            this.panelGotaChuva.Location = new System.Drawing.Point(44, 240);
+            this.panelGotaChuva.Name = "panelGotaChuva";
+            this.panelGotaChuva.Size = new System.Drawing.Size(249, 184);
+            this.panelGotaChuva.TabIndex = 2;
             // 
-            // pictureBox3
+            // picRain1
             // 
-            this.pictureBox3.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.picRain1.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain1.Location = new System.Drawing.Point(11, 0);
+            this.picRain1.Name = "picRain1";
+            this.picRain1.Size = new System.Drawing.Size(23, 50);
+            this.picRain1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain1.TabIndex = 0;
+            this.picRain1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AnimatedRainLoading.Properties.Resources.puddle;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 407);
+            this.pictureBox2.Location = new System.Drawing.Point(44, 430);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(249, 59);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -97,102 +99,107 @@ namespace AnimatedRainLoading
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AnimatedRainLoading.Properties.Resources.cloud;
-            this.pictureBox1.Location = new System.Drawing.Point(40, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 125);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(249, 109);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox4
+            // picRain2
             // 
-            this.pictureBox4.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox4.Location = new System.Drawing.Point(37, 32);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(17, 34);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.picRain2.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain2.Location = new System.Drawing.Point(37, 32);
+            this.picRain2.Name = "picRain2";
+            this.picRain2.Size = new System.Drawing.Size(17, 34);
+            this.picRain2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain2.TabIndex = 1;
+            this.picRain2.TabStop = false;
             // 
-            // pictureBox5
+            // picRain3
             // 
-            this.pictureBox5.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox5.Location = new System.Drawing.Point(56, 44);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 59);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.picRain3.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain3.Location = new System.Drawing.Point(56, 44);
+            this.picRain3.Name = "picRain3";
+            this.picRain3.Size = new System.Drawing.Size(24, 59);
+            this.picRain3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain3.TabIndex = 2;
+            this.picRain3.TabStop = false;
             // 
-            // pictureBox6
+            // picRain4
             // 
-            this.pictureBox6.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox6.Location = new System.Drawing.Point(86, 32);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(17, 34);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
+            this.picRain4.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain4.Location = new System.Drawing.Point(86, 32);
+            this.picRain4.Name = "picRain4";
+            this.picRain4.Size = new System.Drawing.Size(17, 34);
+            this.picRain4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain4.TabIndex = 3;
+            this.picRain4.TabStop = false;
             // 
-            // pictureBox7
+            // picRain5
             // 
-            this.pictureBox7.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox7.Location = new System.Drawing.Point(109, 16);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(14, 66);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
+            this.picRain5.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain5.Location = new System.Drawing.Point(109, 16);
+            this.picRain5.Name = "picRain5";
+            this.picRain5.Size = new System.Drawing.Size(14, 66);
+            this.picRain5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain5.TabIndex = 4;
+            this.picRain5.TabStop = false;
             // 
-            // pictureBox8
+            // picRain6
             // 
-            this.pictureBox8.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox8.Location = new System.Drawing.Point(129, 29);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(10, 31);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
+            this.picRain6.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain6.Location = new System.Drawing.Point(129, 29);
+            this.picRain6.Name = "picRain6";
+            this.picRain6.Size = new System.Drawing.Size(10, 31);
+            this.picRain6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain6.TabIndex = 5;
+            this.picRain6.TabStop = false;
             // 
-            // pictureBox9
+            // picRain7
             // 
-            this.pictureBox9.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox9.Location = new System.Drawing.Point(145, 19);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(10, 56);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
+            this.picRain7.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain7.Location = new System.Drawing.Point(145, 19);
+            this.picRain7.Name = "picRain7";
+            this.picRain7.Size = new System.Drawing.Size(10, 56);
+            this.picRain7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain7.TabIndex = 6;
+            this.picRain7.TabStop = false;
             // 
-            // pictureBox10
+            // picRain8
             // 
-            this.pictureBox10.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox10.Location = new System.Drawing.Point(161, 8);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(10, 56);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
+            this.picRain8.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain8.Location = new System.Drawing.Point(161, 8);
+            this.picRain8.Name = "picRain8";
+            this.picRain8.Size = new System.Drawing.Size(10, 56);
+            this.picRain8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain8.TabIndex = 7;
+            this.picRain8.TabStop = false;
             // 
-            // pictureBox11
+            // picRain9
             // 
-            this.pictureBox11.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox11.Location = new System.Drawing.Point(177, 19);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(17, 34);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 8;
-            this.pictureBox11.TabStop = false;
+            this.picRain9.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain9.Location = new System.Drawing.Point(177, 19);
+            this.picRain9.Name = "picRain9";
+            this.picRain9.Size = new System.Drawing.Size(17, 34);
+            this.picRain9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain9.TabIndex = 8;
+            this.picRain9.TabStop = false;
             // 
-            // pictureBox12
+            // picRain10
             // 
-            this.pictureBox12.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
-            this.pictureBox12.Location = new System.Drawing.Point(197, 40);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(17, 34);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox12.TabIndex = 9;
-            this.pictureBox12.TabStop = false;
+            this.picRain10.Image = global::AnimatedRainLoading.Properties.Resources.rain_L;
+            this.picRain10.Location = new System.Drawing.Point(197, 40);
+            this.picRain10.Name = "picRain10";
+            this.picRain10.Size = new System.Drawing.Size(17, 34);
+            this.picRain10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picRain10.TabIndex = 9;
+            this.picRain10.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Loading
             // 
@@ -200,26 +207,27 @@ namespace AnimatedRainLoading
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(358, 642);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelGotaChuva);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Loading";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Animated Rain Loading";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Load += new System.EventHandler(this.Loading_Load);
+            this.panelGotaChuva.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picRain1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picRain10)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -228,17 +236,18 @@ namespace AnimatedRainLoading
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Panel panelGotaChuva;
+        private System.Windows.Forms.PictureBox picRain1;
+        private System.Windows.Forms.PictureBox picRain6;
+        private System.Windows.Forms.PictureBox picRain5;
+        private System.Windows.Forms.PictureBox picRain4;
+        private System.Windows.Forms.PictureBox picRain3;
+        private System.Windows.Forms.PictureBox picRain2;
+        private System.Windows.Forms.PictureBox picRain10;
+        private System.Windows.Forms.PictureBox picRain9;
+        private System.Windows.Forms.PictureBox picRain8;
+        private System.Windows.Forms.PictureBox picRain7;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
