@@ -46,6 +46,7 @@ namespace AnimatedRainLoading
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelPoçaDaAgua = new System.Windows.Forms.Panel();
             this.timerPocaDaAgua = new System.Windows.Forms.Timer(this.components);
+            this.lblPorcentagem = new System.Windows.Forms.Label();
             this.panelGotaChuva.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picRain1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPoçaDaAgua)).BeginInit();
@@ -215,12 +216,27 @@ namespace AnimatedRainLoading
             this.timerPocaDaAgua.Interval = 1000;
             this.timerPocaDaAgua.Tick += new System.EventHandler(this.timerPocaDaAgua_Tick);
             // 
+            // lblPorcentagem
+            // 
+            this.lblPorcentagem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.ForeColor = System.Drawing.Color.White;
+            this.lblPorcentagem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblPorcentagem.Location = new System.Drawing.Point(153, 500);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(21, 13);
+            this.lblPorcentagem.TabIndex = 4;
+            this.lblPorcentagem.Text = "0%";
+            // 
             // Loading
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.ClientSize = new System.Drawing.Size(358, 642);
+            this.Controls.Add(this.lblPorcentagem);
             this.Controls.Add(this.panelPoçaDaAgua);
             this.Controls.Add(this.panelGotaChuva);
             this.Controls.Add(this.pictureBoxPoçaDaAgua);
@@ -244,6 +260,7 @@ namespace AnimatedRainLoading
             ((System.ComponentModel.ISupportInitialize)(this.picRain9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRain10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -265,6 +282,7 @@ namespace AnimatedRainLoading
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panelPoçaDaAgua;
         private System.Windows.Forms.Timer timerPocaDaAgua;
+        private System.Windows.Forms.Label lblPorcentagem;
     }
 }
 

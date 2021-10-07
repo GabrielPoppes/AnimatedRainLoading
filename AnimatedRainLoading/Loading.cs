@@ -27,12 +27,14 @@ namespace AnimatedRainLoading
 
         int[] rainSpeeds = {4, 6, 8, 3, 5, 6, 7, 4, 2, 5 }; // velocidade de cada gota de chuva
         int loadingSpeed = 2;
+        float initialPercentage = 0;
         public Loading()
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 7, 7)); // Arredondando as bordas
         }
 
+        #region Timer 1 (para cair as gotas de água)
         private void timer1_Tick(object sender, EventArgs e)
         {
             for (int i = 0; i < 10; i++)
@@ -121,20 +123,31 @@ namespace AnimatedRainLoading
                 }
             }
         }
+        #endregion
 
+        #region Evento Loading da form
         private void Loading_Load(object sender, EventArgs e)
         {
             timer1.Start();
             timerPocaDaAgua.Start();
         }
+        #endregion
 
+        #region Timer da poça da água
         private void timerPocaDaAgua_Tick(object sender, EventArgs e)
         {
+            initialPercentage += loadingSpeed;
+            float percentage = initialPercentage / pictureBoxPoçaDaAgua.Height * 100;
+
+            lblPorcentagem.Text = (int)percentage + " %";
+
             panelPoçaDaAgua.Location = new Point(panelPoçaDaAgua.Location.X, panelPoçaDaAgua.Location.Y + loadingSpeed);
             if (panelPoçaDaAgua.Location.Y > pictureBoxPoçaDaAgua.Location.Y + pictureBoxPoçaDaAgua.Height)
             {
+                lblPorcentagem.Text = "100 %";
                 this.timerPocaDaAgua.Stop();
             }
         }
+        #endregion
     }
 }
