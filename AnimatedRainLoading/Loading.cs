@@ -13,6 +13,17 @@ namespace AnimatedRainLoading
 {
     public partial class Loading : Form
     {
+        #region Arredondando as bordas da form
+        [DllImportAttribute("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+            int left,
+            int top,
+            int right,
+            int bottom,
+            int width,
+            int height
+            );
+        #endregion
         public Loading()
         {
             InitializeComponent();
